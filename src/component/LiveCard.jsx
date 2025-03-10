@@ -1,4 +1,3 @@
-import React from 'react'
 import { LiveMatches } from '../data/LiveMatch'
 
 const LiveCard = () => {
@@ -6,7 +5,7 @@ const LiveCard = () => {
         <div className='grid grid-cols-3 gap-2 p-1'>
             {LiveMatches?.map((item) => {
                 return (
-                    <div className='bg-slate-600 px-2 pb-2 rounded-md'>
+                    <div className='bg-slate-600 px-2 pb-2 rounded-md' key={item?._id}>
                         <div className='flex justify-between my-2'>
                             <small className='text-[9px] mt-0 text-slate-300 '>{item?.matchDetails?.format} {item?.matchDetails?.matchType}</small><small className='text-[9px] mt-0 text-slate-300'>{item?.matchDetails?.date}</small>
                         </div>
