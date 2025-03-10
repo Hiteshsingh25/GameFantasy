@@ -1,7 +1,7 @@
 import DefaultView from '../layout/DefaultView'
 import img4 from '../assets/img4.jpg'
 import LiveCard from '../component/LiveCard'
-// import UpcomingMatches from '../component/betMatched/upcomingMatches'
+import UpcomingMatches from '../component/betMatched/upcomingMatches'
 
 function Home() {
   return (
@@ -18,7 +18,7 @@ function Home() {
       </div>
       <div> 
         <small className='text-yellow-500 font-bold text-[15px] px-2'>Upcoming Score<span className='text-[11px] mx-2'>( Join contest to win more )</span></small>
-        {/* <UpcomingsMatches/> */}
+        <UpcomingMatches/>
       </div>
     </DefaultView>
   )
