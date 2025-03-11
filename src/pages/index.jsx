@@ -1,7 +1,7 @@
-import DefaultView from '../layout/DefaultView'
-import img4 from '../assets/img4.jpg'
-import LiveCard from '../component/LiveCard'
-import UpcomingMatches from '../component/betMatched/UpcomingMatches'
+// import DefaultView from '../layout/DefaultView'
+// import img4 from '../assets/img4.jpg'
+// import LiveCard from '../component/LiveCard'
+// import UpcomingMatches from '../component/betMatched/UpcomingMatches'
 
 function Home() {
   return (
