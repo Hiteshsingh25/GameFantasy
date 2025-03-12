@@ -2,6 +2,7 @@ import React from 'react'
 import DefaultView from '../../layout/DefaultView'
 import img4 from '../../assets/img4.jpg'
 import { contests } from '../../data/contest'
+import CreateTeamModal from '../../component/Modals/CreateTeamModal.jsx'
 
 function ContestList() {
     return (
@@ -18,7 +19,10 @@ function ContestList() {
                 </span>
                 <div className='grid grid-cols-2 gap-2'>
                     {contests?.map((item) => (
-                        <div className='flex px-3 items-center justify-between gap-3 bg-slate-600 p-1 rounded-md'>
+                        <div className='flex px-3 items-center justify-between gap-3 bg-slate-600 p-1 rounded-md' 
+                        key={item?.contest_name}
+                        // onClick={}
+                        >
                             <img
                                 src={item?.image}
                             />
@@ -37,6 +41,9 @@ function ContestList() {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className='mx-auto w-full'>
+            <CreateTeamModal />
                 </div>
             </div>
         </DefaultView>
